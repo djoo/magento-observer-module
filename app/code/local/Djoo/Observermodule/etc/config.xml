@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Djoo_Observermodule>
+            <version>1</version>
+        </Djoo_Observermodule>
+    </modules>
+    <global>
+        <models>
+            <Djoo_Observermodule>
+                <class>Djoo_Observermodule_Model</class>
+            </Djoo_Observermodule>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <sales_order_place_after><!--Here the name of event-->
+                <observers>
+                    <Djoo_Observermodule>
+                        <type>model</type>
+                        <class>Djoo_Observermodule/observer</class>
+                        <method>mycustomfunction</method>
+                    </Djoo_Observermodule>
+                </observers>
+            </sales_order_place_after>
+        </events>
+    </frontend>
+</config>

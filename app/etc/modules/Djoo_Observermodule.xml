@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Djoo_Observermodule>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Djoo_Observermodule>
+    </modules>
+</config>
